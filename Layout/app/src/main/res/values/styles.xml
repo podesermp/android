@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Meu_troco</item>
+        <item name="colorPrimaryDark">@color/MT_escuro</item>
+        <item name="colorAccent">@color/Meu_troco</item>
+        <item name="android:windowBackground">@color/backgraund</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textColorPrimary">@color/white</item>
+
+    </style>
+
+</resources>

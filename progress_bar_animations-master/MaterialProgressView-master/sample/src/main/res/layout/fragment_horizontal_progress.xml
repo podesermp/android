@@ -1,0 +1,249 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/progress_bubble_text"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bubble_shape"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="36%"/>
+
+    <com.moos.library.HorizontalProgressBar
+        android:id="@+id/progressView_horizontal"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="40dp"
+        app:start_color="@color/red_start"
+        app:end_color="@color/red_end"
+        app:track_width="12dp"
+        app:textMovedEnable="true"
+        app:end_progress="60"
+        app:progressTextColor="#696969"
+        app:isTracked="true"
+        app:trackColor="#f4f4f4"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="track width："/>
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/hsb_track_width"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="20"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="start progress："/>
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/hsb_start_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="end progress："/>
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/hsb_end_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="60"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="text size："/>
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/hsb_text_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="20"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="corner radius："/>
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/hsb_corner_radius"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="20"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="trackEnabled："/>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/hsc_isTracked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_margin="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="textVisibility："/>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/hsc_text_visibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_margin="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#464646"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="updating progress with downloading："/>
+
+                <ImageView
+                    android:id="@+id/hb_download"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_download"
+                    android:layout_marginLeft="16dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cb_progress_call_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_start"
+                android:gravity="center"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="12dp"
+                android:textAllCaps="false"
+                android:padding="8dp"
+                android:text=""/>
+
+            <Button
+                android:id="@+id/hb_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/start_btn_selector"
+                android:textColor="#363636"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="15dp"
+                android:layout_marginBottom="16dp"
+                android:textAllCaps="false"
+                android:text="@string/start_animation_Str"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+

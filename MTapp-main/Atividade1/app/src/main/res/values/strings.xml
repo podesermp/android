@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Atividade1</string>
+    <string name="imageView">imageView</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="logoLogin">LogoLogin</string>
+    <string name="buttonLogin">ButtonLogin</string>
+
+    <!-- LoginActivity -->
+
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Senha</string>
+    <string name="forgot_my_password">
+        Esqueci minha senha
+    </string>
+    <string name="sign_in">Entrar</string>
+    <string name="sign_in_going">Entrando&#8230;</string>
+    <string name="or">ou</string>
+    <string name="sign_up">
+        Criar minha conta
+    </string>
+    <string name="privacy_policy">
+        Políticas de privacidade
+    </string>
+    <string name="invalid_login">
+        Dados de login inválidos.
+    </string>
+    <string name="button_arraylist">Button ArrayList</string>
+    <string name="btnlogin">btnLogin</string>
+    <string name="button">Button</string>
+    <string name="add">Add</string>
+    <string name="addEdit">addEdit</string>
+    <string name="button_autocomplet">Button AutoComplet</string>
+    <string name="email">email</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha :(</string>
+    <string name="ainda_n_o_possui_cadastro">Ainda não possui cadastro?</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="insira_seu_email">Insira seu Email</string>
+    <string name="digite_a_senha_novamente">Digite a senha novamente</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="concordo_com_os_termos_acordados_nesse_aplicativo_que_est_o_de_simples_acesso">Concordo com os termos acordados nesse aplicativo, que estão de simples acesso</string>
+    <string name="insira_seu_cpf">Insira seu CPF</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="voltar_cad">voltar_cad</string>
+
+</resources>
